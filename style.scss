@@ -222,6 +222,32 @@ body {
 }
 
 
+// about
+.about {
+  margin-top: 100px;
+  padding: 100px 0px;
+  background-color: $black;
+  color: $white;
+  & .container {
+    & .aboutImage {
+      height: 400px;
+      background-size: cover;
+      overflow: hidden;
+      & img {
+        width:  280px;
+        filter: grayscale(100%) contrast(1) brightness(80%);
+      }
+    }
+    & .aboutDesc {
+      & .aboutSosmed {
+        & i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
 
 
 // media query

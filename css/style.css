@@ -198,6 +198,25 @@ body {
   bottom: 0;
 }
 
+.about {
+  margin-top: 100px;
+  padding: 100px 0px;
+  background-color: #06090A;
+  color: white;
+}
+.about .container .aboutImage {
+  height: 400px;
+  background-size: cover;
+  overflow: hidden;
+}
+.about .container .aboutImage img {
+  width: 280px;
+  filter: grayscale(100%) contrast(1) brightness(80%);
+}
+.about .container .aboutDesc .aboutSosmed i {
+  font-size: 20px;
+}
+
 @media (max-width: 1199.98px) {
   .header .myJumbotron {
     display: flex;
