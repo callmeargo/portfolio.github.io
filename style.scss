@@ -4,10 +4,6 @@ $roboto: 'Roboto Mono';
 $black:#06090A;
 $white: white;
 
-body {
-  height: 6000px;
-}
-
 * {
     font-family: $roboto;
 }
@@ -246,9 +242,52 @@ body {
       }
     }
   }
+  & .mySkills {
+    margin-top: 100px;
+    & .col-12 {
+      & .elmt {
+        color: white;
+        background-color: #181818;
+        height: 150px;
+        & i {
+          font-size: 38px;
+        }
+        & h2 {
+          font-weight: 300;
+          font-size: 20px;
+        }
+      }
+    }
+  }
 }
 
-
+.footer {
+  margin-top: 100px;
+  & .twoBtn {
+    margin-top: 40px;
+    & a {
+      text-decoration: none;
+    }
+    & .left {
+      background-color: transparent;
+      border: 2px solid $black;
+      & a {
+        color: $black;
+        font-weight: 400;
+      }
+    }
+    & .right {
+      background-color: $black;
+      & a {
+        color: $white;
+      }
+    }
+  }
+  & .copyright {
+    margin-top: 100px;
+    border-top: 1px solid $black;
+  }
+}
 
 // media query
 @media (max-width: 1199.98px) { 

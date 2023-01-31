@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
-body {
-  height: 6000px;
-}
-
 * {
   font-family: "Roboto Mono";
 }
@@ -215,6 +211,49 @@ body {
 }
 .about .container .aboutDesc .aboutSosmed i {
   font-size: 20px;
+}
+.about .mySkills {
+  margin-top: 100px;
+}
+.about .mySkills .col-12 .elmt {
+  color: white;
+  background-color: #181818;
+  height: 150px;
+}
+.about .mySkills .col-12 .elmt i {
+  font-size: 38px;
+}
+.about .mySkills .col-12 .elmt h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer .twoBtn {
+  margin-top: 40px;
+}
+.footer .twoBtn a {
+  text-decoration: none;
+}
+.footer .twoBtn .left {
+  background-color: transparent;
+  border: 2px solid #06090A;
+}
+.footer .twoBtn .left a {
+  color: #06090A;
+  font-weight: 400;
+}
+.footer .twoBtn .right {
+  background-color: #06090A;
+}
+.footer .twoBtn .right a {
+  color: white;
+}
+.footer .copyright {
+  margin-top: 100px;
+  border-top: 1px solid #06090A;
 }
 
 @media (max-width: 1199.98px) {
