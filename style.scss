@@ -125,6 +125,7 @@ body {
             align-items: flex-end;
             bottom: 0;
             width: 35%;
+            background-color: rgb(31, 31, 31);
             img {
                 width: 384px;
                 filter: grayscale(100%) contrast(1) brightness(80%);
@@ -179,6 +180,35 @@ body {
         }
     }
 }
+
+
+// PROJECT
+.project {
+  // background-color: salmon;
+  margin-top: 100px;
+  & .projectCard {
+    // background-color: grey;
+    & .myCard {
+      // background-color: brown;
+  padding: 30px 0px;
+      & .myCardImage {
+        position: relative;
+        & img {
+          width: 100%;
+        }
+      }
+      & .myCardButton {
+        background-color: $black;
+        color: $white;
+        z-index: 99;
+        bottom: 0;
+        display: none;
+      }
+    }
+  }
+}
+
+
 
 
 // media query

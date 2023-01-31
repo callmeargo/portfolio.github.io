@@ -121,6 +121,7 @@ body {
   align-items: flex-end;
   bottom: 0;
   width: 35%;
+  background-color: rgb(31, 31, 31);
 }
 .header .myJumbotron .image img {
   width: 384px;
@@ -165,6 +166,26 @@ body {
   font-size: 20px;
   font-weight: 500;
   font-family: "Roboto Mono";
+}
+
+.project {
+  margin-top: 100px;
+}
+.project .projectCard .myCard {
+  padding: 30px 0px;
+}
+.project .projectCard .myCard .myCardImage {
+  position: relative;
+}
+.project .projectCard .myCard .myCardImage img {
+  width: 100%;
+}
+.project .projectCard .myCard .myCardButton {
+  background-color: #06090A;
+  color: white;
+  z-index: 99;
+  bottom: 0;
+  display: none;
 }
 
 @media (max-width: 1199.98px) {
