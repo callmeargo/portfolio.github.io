@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
 body {
-  height: 3000px;
+  height: 6000px;
 }
 
 * {
@@ -121,7 +121,6 @@ body {
   align-items: flex-end;
   bottom: 0;
   width: 35%;
-  background-color: rgb(31, 31, 31);
 }
 .header .myJumbotron .image img {
   width: 384px;
@@ -180,12 +179,23 @@ body {
 .project .projectCard .myCard .myCardImage img {
   width: 100%;
 }
-.project .projectCard .myCard .myCardButton {
+.project .projectCard .webProject {
+  background-color: red;
+  margin-top: 50px;
+}
+.project .projectCard .webProject .WPImage {
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.205);
+}
+.project .projectCard .webProject .myCardButton {
   background-color: #06090A;
   color: white;
   z-index: 99;
   bottom: 0;
-  display: none;
 }
 
 @media (max-width: 1199.98px) {

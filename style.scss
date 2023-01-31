@@ -3,9 +3,11 @@
 $roboto: 'Roboto Mono';
 $black:#06090A;
 $white: white;
+
 body {
-    height: 3000px;
+  height: 6000px;
 }
+
 * {
     font-family: $roboto;
 }
@@ -125,7 +127,7 @@ body {
             align-items: flex-end;
             bottom: 0;
             width: 35%;
-            background-color: rgb(31, 31, 31);
+
             img {
                 width: 384px;
                 filter: grayscale(100%) contrast(1) brightness(80%);
@@ -184,25 +186,36 @@ body {
 
 // PROJECT
 .project {
-  // background-color: salmon;
   margin-top: 100px;
   & .projectCard {
-    // background-color: grey;
     & .myCard {
-      // background-color: brown;
-  padding: 30px 0px;
+      padding: 30px 0px;
       & .myCardImage {
         position: relative;
         & img {
           width: 100%;
         }
       }
+    }
+    
+
+    // website project
+    & .webProject {
+      background-color: red;
+      margin-top: 50px;
+      & .WPImage {
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.205);
+      }
       & .myCardButton {
         background-color: $black;
         color: $white;
         z-index: 99;
         bottom: 0;
-        display: none;
       }
     }
   }
