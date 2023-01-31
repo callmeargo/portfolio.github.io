@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono:wght@100;200;300;400;500&display=swap");
+body {
+  height: 3000px;
+}
+
+* {
+  font-family: "Roboto Mono";
+}
+
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  z-index: 999;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.438);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(24, 24, 24, 0.877);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #06090A;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    min-height: calc(35vh - 50px);
+    overflow-y: auto;
+  }
+}
+.header {
+  background-color: #06090A;
+  min-height: 100vh;
+}
+.header a {
+  color: white;
+}
+.header a:hover {
+  color: white;
+}
+.header .container .navbar {
+  height: 10vh;
+}
+.header .myJumbotron {
+  overflow: hidden;
+  flex-direction: column;
+}
+.header .myJumbotron .image {
+  order: 2 !important;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0;
+  width: 35%;
+}
+.header .myJumbotron .image img {
+  width: 384px;
+  filter: grayscale(100%) contrast(1) brightness(80%);
+}
+.header .myJumbotron .jumbotronText {
+  color: white;
+  order: 1 !important;
+  margin-top: 20px;
+}
+.header .myJumbotron .jumbotronText .shdw .gd .gdUp, .header .myJumbotron .jumbotronText .shdw .gd .gdDown {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 90px);
+}
+.header .myJumbotron .jumbotronText .shdw .gd .gdUp h2, .header .myJumbotron .jumbotronText .shdw .gd .gdDown h2 {
+  display: block;
+  text-shadow: -5px -5px white;
+  transform: translate(10px, 10px);
+  -webkit-text-stroke: 0.5px white;
+  -webkit-text-fill-color: transparent;
+}
+.header .myJumbotron .jumbotronText .shdw h2 {
+  font-weight: 300;
+  font-size: 148px;
+  letter-spacing: 18px;
+  line-height: 140px;
+}
+.header .myJumbotron .jumbotronText h4 {
+  font-weight: 300;
+  font-size: 42px;
+}
+.header .myJumbotron .jumbotronText .textAbout {
+  font-weight: 300;
+}
+.header .myJumbotron .jumbotronText .textAbout .social {
+  color: #06090A;
+  font-size: 22px;
+  background-color: white;
+}
+.header .myJumbotron .jumbotronText .textAbout .social p {
+  margin: 0px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto Mono";
+}
+
+@media (max-width: 1199.98px) {
+  .header .myJumbotron {
+    display: flex;
+  }
+  .header .myJumbotron .image {
+    position: static;
+    justify-content: center;
+    width: 100%;
+  }
+  .header .myJumbotron .image img {
+    width: 384px;
+  }
+}
+@media (max-width: 575.98px) {
+  .header .myJumbotron .image {
+    margin-top: 30px;
+  }
+  .header .myJumbotron .jumbotronText h4 {
+    font-size: 32px;
+  }
+}/*# sourceMappingURL=style.css.map */
