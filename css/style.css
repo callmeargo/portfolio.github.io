@@ -156,14 +156,8 @@
   font-size: 22px;
   background-color: white;
 }
-.header .myJumbotron .jumbotronText .textAbout .social p {
-  margin: 0px;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Roboto Mono";
-}
 .header .myJumbotron .jumbotronText .textAbout .social a {
-  color: #06090A;
+  color: #06090A !important;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
@@ -220,13 +214,13 @@
   filter: grayscale(100%) contrast(1) brightness(80%);
 }
 .about .container .aboutDesc .aboutSosmed a {
-  color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: 500;
 }
 .about .container .aboutDesc .aboutSosmed a i {
   font-size: 20px;
+  color: white;
 }
 .about .mySkills {
   margin-top: 100px;
