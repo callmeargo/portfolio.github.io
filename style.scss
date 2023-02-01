@@ -173,6 +173,12 @@ $white: white;
                         font-weight: 500;
                         font-family: $roboto;
                     }
+                    & a {
+                      color: $black;
+                      text-decoration: none;
+                      font-size: 20px;
+                      font-weight: 500;
+                    }
                 }
             }
         }
@@ -212,6 +218,10 @@ $white: white;
         color: $white;
         z-index: 99;
         bottom: 0;
+        & a {
+          text-decoration: none;
+          color: $white;
+        }
       }
     }
   }
@@ -236,8 +246,14 @@ $white: white;
     }
     & .aboutDesc {
       & .aboutSosmed {
-        & i {
+        & a {
+          & i {
+            font-size: 20px;
+          }
+          color: $white;
+          text-decoration: none;
           font-size: 20px;
+          font-weight: 500;
         }
       }
     }
